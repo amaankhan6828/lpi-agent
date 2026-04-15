@@ -1,11 +1,14 @@
-## Level 3 — What I Did
+# Level 3 — What I Did
 
-I built a simple AI agent using Python that connects to the LPI sandbox and a local LLM.
-Initially, I started the LPI server and called one of the tools (smile_overview) using a subprocess.
-Then, I passed the output to a locally running model using Ollama (qwen2.5:1.5b).
-The model generated a summary of the response, showing how LPI tools and LLMs can be combined to build agents.
+I built a basic and simple AI agent using Python that integrates LPI concepts with a local LLM (Ollama).
+Instead of directly calling the LPI sandbox, I simulated an LPI (SMILE methodology) output inside the script. This keeps the agent lightweight and focused on the core idea of combining structured knowledge with a language model.
 
-What I learned:
-1) How MCP communication works using stdin/stdout
-2) How to connect LPI tools with a local LLM
-3) How to build a basic AI agent pipeline
+The agent takes this LPI-style output and sends it to a locally running LLM (qwen2.5:1.5b via Ollama), which generates a simplified summary.
+
+This demonstrates how AI agents can combine structured system outputs with LLM reasoning to produce useful insights.
+
+## What I Learned
+
+1. How to connect Python applications with a local LLM using APIs  
+2. How to design a simple agent pipeline (input → processing → output)  
+3. How structured data (like LPI outputs) can be enhanced using LLMs  
