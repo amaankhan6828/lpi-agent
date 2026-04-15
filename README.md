@@ -20,3 +20,6 @@ This is a simple AI agent built using the LPI concepts and a local LLM (Ollama).
 ```bash
 pip install -r requirements.txt
 python agent.py
+
+## Sample Output
+![Agent Output](https://github.com/user-attachments/assets/8cec4d1b-bced-4127-a069-9d56d2977cc1)
