@@ -13,7 +13,14 @@ init_msg = {
     "jsonrpc": "2.0",
     "id": 1,
     "method": "initialize",
-    "params": {}
+    "params": {
+        "protocolVersion": "2024-11-05",
+        "capabilities": {},
+        "clientInfo": {
+            "name": "lpi-agent",
+            "version": "1.0"
+        }
+    }
 }
 server.stdin.write(json.dumps(init_msg) + "\n")
 server.stdin.flush()
