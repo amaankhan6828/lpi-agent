@@ -24,7 +24,8 @@ init_msg = {
 }
 server.stdin.write(json.dumps(init_msg) + "\n")
 server.stdin.flush()
-
+init_response = server.stdout.readline()
+print("INIT RESPONSE:\n", init_response)
 
 tool_call = {
     "jsonrpc": "2.0",
